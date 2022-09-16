@@ -54,3 +54,8 @@ for (key, value) in dict4 {
     print("key = \(key), value = \(value)")//В этом случае сразу UnRap-нется
 }
 print("")
+
+//HOME WORK!!!
+print("HOME WORK!!!!")
+
+
