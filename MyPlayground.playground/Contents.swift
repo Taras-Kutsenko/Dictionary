@@ -77,7 +77,15 @@ print("\(jorurnal)\n")
 jorurnal["Ivan Ivanov"] = nil
 jorurnal["Yuliia Kutsenko"] = nil
 print("\(jorurnal)\n")
+
 //1.4. Посчитать общий бал группы и средний бал группы
+var sum = 0
+var averageRating = 0
+
+for i in jorurnal.values {
+    sum += i
+}
+print("\(sum)\n")
 //2. Создать Dictionary дни в месяцах где месяц ключ а количество дней значение
 //2.1. Вывести это на экран используя тюплы
 //2.2. Вывести на экран проходя по масиву ключей но проверить работает ли это сейчас!!!!
