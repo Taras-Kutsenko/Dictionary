@@ -105,5 +105,16 @@ for i in 0..<mons.count {
     print("Mons \(mons[i]) have a \(days[i]) days")
 }
 print("")
+
 //3. Создать Dictionary в котором ключ это адрес ячейки на шахматной доске String, значение должно быть bool. True эсли ячейка белая и False эсли черная и это нужно использовать цикл в цыкле с помошью масивов
+let abc = ["a", "b", "c", "d", "e", "f", "g", "h"]
+let num = ["1", "2", "3", "4", "5", "6", "7", "8"]
+var board = [String : Bool]()
+for i in 0..<abc.count {
+    if i % 2 == 0 {
+        board.updateValue(false, forKey: abc[i])
+        print(board)
+    }
+
+}
 
