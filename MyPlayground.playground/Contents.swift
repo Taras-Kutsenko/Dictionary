@@ -85,7 +85,10 @@ var averageRating = 0
 for i in jorurnal.values {
     sum += i
 }
-print("\(sum)\n")
+print("Sum of rating is \(sum)\n")
+averageRating = sum / jorurnal.count
+print("Avarage rating is \(averageRating)\n")
+
 //2. Создать Dictionary дни в месяцах где месяц ключ а количество дней значение
 //2.1. Вывести это на экран используя тюплы
 //2.2. Вывести на экран проходя по масиву ключей но проверить работает ли это сейчас!!!!
