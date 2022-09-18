@@ -110,11 +110,22 @@ print("")
 let abc = ["a", "b", "c", "d", "e", "f", "g", "h"]
 let num = ["1", "2", "3", "4", "5", "6", "7", "8"]
 var board = [String : Bool]()
-for i in 0..<abc.count {
-    if i % 2 == 0 {
-        board.updateValue(false, forKey: abc[i])
-        print(board)
-    }
 
+for i in 0..<abc.count {
+    if i % 2 != 0 {
+        board.updateValue(true, forKey: abc[i] + String(num.startIndex + 1))
+    } else {
+        board.updateValue(false, forKey: abc[i] + String(num.startIndex + 1))
+    }
+    for j in num {
+        if j % 2 != 0 {
+            board.updateValue(true, forKey: abc[i] + num[j])
+        } else {
+            board.updateValue(false, forKey: abc[i] + num[j])
+        }
+    }
+}
+for i in board.keys {
+    print("Key - \(i) its \(board[i]!)")
 }
 
