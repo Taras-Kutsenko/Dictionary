@@ -96,6 +96,14 @@ let yer = ["Jan" : 31, "Feb" : 28, "Mar" : 31, "Apr" : 30, "May" : 31, "Jun" : 3
 for (mons, days) in yer {
     print("Mons \(mons) have a \(days) days")
 }
+print("")
 //2.2. Вывести на экран проходя по масиву ключей но проверить работает ли это сейчас!!!!
+let mons = yer.keys.map({$0})//Переводит Dictionary в Array
+var days = yer.values.map({$0})
+
+for i in 0..<mons.count {
+    print("Mons \(mons[i]) have a \(days[i]) days")
+}
+print("")
 //3. Создать Dictionary в котором ключ это адрес ячейки на шахматной доске String, значение должно быть bool. True эсли ячейка белая и False эсли черная и это нужно использовать цикл в цыкле с помошью масивов
 
