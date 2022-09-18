@@ -59,8 +59,13 @@ print("")
 print("HOME WORK!!!!")
 
 //1. Создать Dictionary - журнал студентов где ключ это Имя Фамилия а значение это оценка
-var jorurnal = ["Taras Kutsenko" : 12, "Yuliia Kutsenko" : 10, "Dawid Kutsenko" : 11, "Samuel Kutsenko" : 9, "Ivav Ivanov" : 5]
+var jorurnal = ["Taras Kutsenko" : 12, "Yuliia Kutsenko" : 10, "Dawid Kutsenko" : 11, "Samuel Kutsenko" : 9, "Ivan Ivanov" : 5]
+print("\(jorurnal)\n")
 //1.1. Несколько студентов перездали контролную и им нужно повысить оценку
+jorurnal["Yuliia Kutsenko"] = 12
+jorurnal.updateValue(9, forKey: "Ivan Ivanov")
+jorurnal.updateValue(11, forKey: "Samuel Kutsenko")
+print("\(jorurnal)\n")
 //1.2. Потом в группу записались еще несколько студентов и написали контрольные
 //1.3. Потом несколько студентов которые были до этого ушли и их нужно вычеркнуть из журнала
 //1.4. Посчитать общий бал группы и средний бал группы
